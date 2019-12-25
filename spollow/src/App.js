@@ -9,7 +9,7 @@ import Search from "./components/Search";
 import UserInfo from "./components/UserInfo";
 import Leaderboard from "./components/Leaderboard";
 import Buy from "./components/Buy";
-import NewsTicker from "./components/NewsTicker";
+// import NewsTicker from "./components/NewsTicker";
 import Map from "./components/Map";
 import NextMatch from "./components/NextMatch";
 
@@ -184,23 +184,19 @@ function App({ apiFacade }) {
                 <img alt="icon" src={require("./images/BDlogo_150px.png")} />
               </div>
               <div id="banner">
-                <img src={require("./images/banner_marple.png")}
+                <img src={require("./images/banner.png")}
                   style={{ 'height': "100%" }}
                   alt="banner"
                 />
               </div>
             </div>
           </div>
-          {/* <div className="container">
-            <div id="menubar">
-              <MenuBar />
-            </div>
-          </div> */}
+
           <div className="container">
             <div id="newsticker">
-              <NewsTicker
+              {/* <NewsTicker
                 standings={standings}
-              />
+              /> */}
             </div>
           </div>
 
@@ -279,44 +275,5 @@ function App({ apiFacade }) {
   );
 }
 
-// function MenuBar() {
-//   console.log("MenuBar");
-//   return (
-//     <div>
-//       <ul className="header">
-//         <li>
-//           <NavLink exact activeClassName="active" to="/">
-//             Home
-//           </NavLink>
-//         </li>
-//         <li>
-//           <NavLink exact activeClassName="active" to="/teams">
-//             Teams
-//           </NavLink>
-//         </li>
-//         <li>
-//           <NavLink exact activeClassName="active" to="/airports">
-//             Airports
-//           </NavLink>
-//         </li>
-//         <li>
-//           <NavLink exact activeClassName="active" to="/nodes">
-//             React
-//           </NavLink>
-//         </li>
-//         <li>
-//           <NavLink exact activeClassName="active" to="/api">
-//             API
-//           </NavLink>
-//         </li>
-//         <li>
-//           <NavLink exact activeClassName="active" to="/flights">
-//             Flights
-//           </NavLink>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }
 
 export default App;
